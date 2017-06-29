@@ -49,7 +49,7 @@ class algo_sort:
         a[l], a[pivot_idx] = a[pivot_idx], a[l]
         p = a[l]
         i, j = l + 1, r
-        while i < j:
+        while i <= j:
             while i <= j and a[i] <= p: i = i + 1
             while i <= j and a[j] >= p: j = j - 1
             if i < j: a[i], a[j] = a[j], a[i]
