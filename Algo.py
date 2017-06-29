@@ -54,7 +54,6 @@ class algo_sort:
             while i <= j and a[j] >= p: j = j - 1
             if i < j: a[i], a[j] = a[j], a[i]
         a[j], a[l] = a[l], a[j]
-        a[j], a[l] = a[l], a[j]
         algo_sort.qsort2(a, l, j - 1)
         algo_sort.qsort2(a, j + 1, r)
         return a
